@@ -19,6 +19,7 @@ body{
   
   fieldset{
     border-radius: 10px; /*Esquinas redondeadas de los fieldset*/
+    border-color: rgb(0, 0, 0); /*Color del borde de las lineas*/
 
   }
 
