@@ -1,0 +1,19 @@
+body{
+    background-color:  rgb(173, 206, 255); /*Color de fondo*/
+    font-family: "Georgia"; /*Fuente de letra*/
+    font-style: italic; /*Estilo de la fuente de letra*/
+  
+  }
+  
+  a { /*Define el color del enlace*/
+    color: blue; 
+    text-decoration: none; /*Elimina el subrayado de los enlaces*/
+ }
+
+ a:hover { /*El enlace cambia de color al pasar el raton*/
+    color: darkblue; 
+ }
+
+  
+
+ 

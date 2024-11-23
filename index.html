@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae</title>
+    <link rel="stylesheet" href="css/styleIndex.css">
+    <style> /*Estilo en la misma pagina*/
+        #indiceUL {
+            font-family: Arial, sans-serif;
+            /*Fuente de letra*/
+            list-style-type: none;
+            /*Elimina el estilo de lu*/
+            overflow: hidden;
+            background-color: rgb(215, 222, 243);
+            /*Color del fondo?*/
+            text-align: center;
+            /*Texto centrado en el centro*/
+            padding: 0;
+            /* Elimina la separacion por defecto */
+            border-radius: 10px;
+            /* Bordes redondeados */
+        }
+
+        #indiceLI {
+            display: inline-block;
+            /* Cambia la alineacion de vertiacal a horizontal*/
+            color: blueviolet;
+            text-align: center;
+            padding: 14px 20px;
+            /* Espaciado entre los enlaces */
+
+        }
+
+        #indiceLI a {
+            text-decoration: none;
+            /* Elimina el subrayado de los enlaces */
+            color: rgb(70, 43, 226);
+            /* Color del enlace */
+            font-weight: bold;
+        }
+
+        #indiceLI:hover {
+            background-color: rgba(66, 36, 236, 0.2);
+            /* Color de fondo al pasar el raton */
+            border-radius: 5px;
+            /* Bordes redondeados al pasar el raton */
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="card">
+        <!--Agrego header section para estructurar mejor la pagina-->
+        <header class="header"> 
+             <!--Conecto la foto y en el css le doy estilo redondo -->
+            <img class="fotoRedonda" src="img/FotoPerfil.jpg" alt="Foto Perfil" title="Foto Curriculum">
+            <!--Le doy movimiento al nombre, indico que rebote de izquierda a derecha y velocidad-->
+            <marquee behavior="alternate" direction="right" scrollamount="2">
+                <h1>Pablo González Pérez</h1>
+            </marquee>
+        </header>
+        <main>
+            <hr>
+
+            <div>
+                <!--Creo el menu de navegaciona  las pagainas y el estilo lo adquiere de la configuracion de arriba-->
+                <ul id="indiceUL">
+                    <li id="indiceLI"> <a href="formulario.html">Formulario de contacto</a> </li>
+                    <li id="indiceLI"> <a href="tablaHorario.html">Horario del curso</a></li>
+                    <li id="indiceLI"> <a href="video.html">Video y Audio </a></li>
+                </ul>
+            </div>
+
+            <hr>
+            <!--Creo una varra de progreso y en  styleindex.css le doy el efecto de ampliación-->
+            <section class="progreso">
+                <div style="text-align: center; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                    <progress id="barra" value="60" max="100"></progress>
+                    <div>
+                        <h3> Progreso del curriculum <span id="valor">60</span>%</h3>
+                    </div>
+                </div>
+            </section>
+            <hr>
+            <section>
+                <div>
+                    <p>
+                        <center>
+                            <h2>Datos Personales</h2>
+                        </center>
+                    <ul>
+                        <li><b>Nombre:</b> Pablo</li>
+                        <li><b>Apellidos:</b> González Pérez</li>
+                        <li><b>Correo electronico:</b> pgp0023@alu.medac.es</li>
+                    </ul>
+                    </p>
+
+                </div>
+            </section>
+
+            <hr>
+
+            <section>
+                <div>
+                    <p>
+                        <center>
+                            <h2>Educación</h2>
+                        </center>
+                    <ol>
+                        <li>Técnico en emergencias sanitarias. Curso 2021/2023</li>
+                        <li>Desarrollo de aplicaciones multiplataforma. Curso 2024/2026</li>
+
+                    </ol>
+
+                    </p>
+
+                </div>
+            </section>
+
+            <hr>
+
+            <section>
+                <div>
+                    <p>
+                        <center>
+                            <h2>Habilidades</h2>
+                        </center>
+                    <ol>
+                        <li>Me considero una persona con grandes capacidades organizativas </li>
+                        <li>Me gusta trabajar en equipo</li>
+                        <li>Tengo una buena comunicación verbal</li>
+                        <li>Considero que tengo grandes capacidades de liderazgo</li>
+                    </ol>
+
+                    </p>
+
+                </div>
+            </section>
+
+            <hr>
+            <section>
+                <!--Aqui creo un elemento interactivo para mostrar los enlaces de interes-->
+                <details>
+                    <!--En ambos elementos interactivos tengo que añadir style ya que si no se ve muy pequeño y por debajo del objeto "triangulo"-->
+                    <summary><h2 style="display: inline;">Enlaces de interés</h2></summary>
+                    <div>
+                        <ol>
+                            <li>Instituto Virtual Medac. 
+                                <a href="https://instituto.medac.es/" title="Instituto Virtual Medac" target="_blank">Ver en una pestaña nueva</a> 
+                                <a href="https://instituto.medac.es/" title="Instituto Virtual Medac">/ Ver en la misma pestaña</a>
+                            </li>
+                            <li>Dirección Medac Aventura. 
+                                <a href="https://maps.app.goo.gl/J4Urm37ThByLYW3Y7" title="Dirección Medac Aventura" target="_blank">Ver en una pestaña nueva</a> 
+                                <a href="https://maps.app.goo.gl/J4Urm37ThByLYW3Y7" title="Dirección Medac Aventura">/ Ver en la misma pestaña</a>
+                            </li>
+                            <li>Proyecto publicado en GitHub Pages 
+                                <a href="https://pablooskii.github.io/Tarea-3-4/"><i>Ver proyecto</i></a>
+                            </li>
+                            <li>Repositorio de GitHub 
+                                <a href="https://github.com/pablooskii/Tarea-3-4.git" target="_blank"><i>Ver repositorio en una página nueva</i></a>
+                            </li>
+                        </ol>
+                        <p style="text-align: center;">
+                            <a href="Proceso commit(push).pdf">PDF Explicativo del Proceso "commit(push)"</a>
+                        </p>
+                    </div>
+                </details>
+            </section>
+
+            <hr>
+
+            <section>
+                <!--Aqui creo un elemento interactivo para mostrar el iframe del centro -->
+                <details> 
+                    <summary><h1 style="display: inline;">Ver mapa del centro académico</h1></summary> 
+                    <div style="text-align: center;">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3152.6557525460744!2d-3.788306224648908!3d37.79810661081657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6dd7dec3dd20ad%3A0x4fad82fdbe189c8!2sMEDAC%20Aventura%20Formaci%C3%B3n%20Profesional!5e0!3m2!1ses!2ses!4v1728978345711!5m2!1ses!2ses"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </details>
+            </section>
+
+        </main>
+    </div>
+
+
+</body>
+
+</html>

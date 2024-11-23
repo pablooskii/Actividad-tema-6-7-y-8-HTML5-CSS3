@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video y Audio</title>
+    <!--Agrego la carpeta de video donde se encuentran el video y el audio-->
+    <link rel="stylesheet" href="css/video.css">
+</head>
+<body>
+    <!--Indico el estilo de card-->
+    <section class="card">
+    <div>
+        <p><h1>¿Has dicho que te apetecia ver un video? Pues aqui lo tienes</h1></p>
+        <!--Indico anchura y altura del video y la imagen de portada-->
+        <video width="720px" height="640px" controls preload="auto" poster="img/LogoMedac.png">
+             <source src="img/Video.mp4"></video>
+    </div>
+
+    <div>
+        <p><h1>¿O prefieres escuchar algo aleatorio?</h1></p>
+        <!--Indico que es un audio para qactivar los controles de pausa y demás-->
+        <audio src="img/audio" controls preload loop type="audio">
+            
+        </audio>
+    </div>
+    <!--Creo un enlace para volver al inico-->
+    <p><a href="index.html"><b><center>Volver al inicio</center></b></p>
+    </section>
+</body>
+</html>

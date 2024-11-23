@@ -1,0 +1,39 @@
+body{
+    background-color:  rgb(113, 127, 255);
+    font-family: "Georgia";
+    font-style: italic;
+    
+  }
+  
+  .card{
+    background-color: rgb(255, 231, 238);
+    width: 700px;
+    margin: auto; /*Para centrar la tarjeta en el medio de la pantalla*/
+    padding: 10px; /*Espacio interno de la tarjeta*/
+    border-radius: 10px; /*Esquinas redondeadas*/
+    box-shadow:  /*Sombras al exterior e interior*/
+      0px 0px 1000px aquamarine,
+      0px 0px 10px aquamarine inset;
+    
+  }
+  
+  fieldset{
+    border-radius: 10px; /*Esquinas redondeadas de los fieldset*/
+
+  }
+
+  input:hover{
+    background-color: rgb(241, 152, 136); /*Cuando pasas el raton por encima de un input cambia de color*/
+  }
+
+  
+  a { /*Define el color del enlace*/
+    color: blue; 
+    text-decoration: none; /*Elimina el subrayado de los enlaces*/
+  }
+
+  a:hover { /*El enlace cambia de color al pasar el raton*/
+      color: darkblue; 
+  }
+
+  

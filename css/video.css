@@ -1,0 +1,36 @@
+body{
+    background-color: lightgreen; /*Color del fondo de toda la pagina*/
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /*Fuente de letra de toda la pagina*/
+    display: flex; 
+    justify-content: center; /*Centra horizontalmente*/
+    align-items: center; /*Centra verticalmente*/
+    height: 100vh; /*Asegura que el body ocupe toda la pantalla para poder centar la tarjeta en el centro*/
+    text-align: center; /*Texto centrado al medio*/
+    letter-spacing: -0.5px; /*Doy menos espacio entre caracteres*/
+}
+
+.card{
+    background-color: rgb(198, 200, 231); /*Color de fondo de la tarjeta*/
+    width: 800px;
+    box-sizing: border-box;
+    padding: 10px; /*Espacio interno de toda tarjeta*/
+    box-shadow: /*Sombras interior y exterior de la tarjeta*/
+      0px 0px 1000px aquamarine,
+      0px 0px 10px aquamarine inset;
+      
+  }
+
+section{ /*Estilo de las secciones */
+    border-radius: 50px ; /*Esquinas redondeadas */
+    align-items: center; /*Todo centrado en el medio */
+
+}
+
+a { /*Define el color del enlace*/
+    color: blue; 
+    text-decoration: none; /*Elimina el subrayado de los enlaces*/
+}
+
+a:hover { /*El enlace cambia de color al pasar el raton*/
+    color: darkblue; 
+}

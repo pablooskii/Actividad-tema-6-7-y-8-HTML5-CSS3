@@ -1,0 +1,63 @@
+body{ /*Aplico estilo a todo el cuerpo*/
+  background-color:  rgb(142, 21, 255); /*Color del fondo*/
+  font-family: "Georgia"; /*Fuente de letra*/
+  font-style: italic; /*Estilo de la duente de letra*/
+  padding: 50px;  /*Espacio con los bordes*/
+}
+
+section{ /*Aplico estilo a todas las secciones*/
+  border-radius: 50px ; /*Equinas redondeadas*/
+  padding: 10px;
+}
+
+section:hover{ /*Aplico estilo a las secciones cuando el cursos esta encima*/
+  background-color: rgb(152, 202, 255);
+  padding: 10px;
+  
+}
+
+.card{ /*Aplico estilo donde se indique la etiqueta que en este caso es para introducir toda la informacion dentro de ella*/
+  background-color: rgb(198, 200, 231);
+  width: 700px;
+  box-sizing: border-box;
+  margin: auto; /*Para que se centre en el medio*/
+  padding: 10px; 
+  box-shadow:  /*Sombras al exterior e interior*/
+    0px 0px 1000px aquamarine,
+    0px 0px 30px aquamarine inset;
+
+  border-radius: 10px;
+    
+}
+
+.fotoRedonda{ /*Aplico estilo a la foto para hacerla redonda*/
+  width: 200px;
+  height: 200px;
+  border-radius: 150px;
+}
+
+.header{  /*Aplico estilo a toda la tarjeta que es margen a todos los lados y todo centrado en el medio*/
+  display: flex; 
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    align-items: center;
+}
+
+.progreso{ /*Aplico estilo a la barra de prograso para darle una animacion de ampliacion*/
+   animation: pulse 2s infinite;} /*Lo que dura el efecto y despues indicamos que se haga en infinito*/
+   @keyframes pulse { /*La referencia de la animacion y indicamos la escala desde la que empieza hasta donde llega*/
+    0%, 100% {transform: scale(1);}
+    50% {transform: scale(1.07);}
+    
+   }
+
+a { /*Cambia el color de todos los enlaces a azul*/
+    color: blue; 
+    text-decoration: none; /*Elimina el subrayado de los enlaces*/
+}
+
+a:hover { /*El enlace cambia de color al pasar el raton*/
+    color: darkblue; 
+}
